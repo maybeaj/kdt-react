@@ -63,11 +63,18 @@ import reportWebVitals from "./reportWebVitals";
 // );
 
 
-import TodoListPanel from './sample_form/TodoListPanel';
+import RouterApp from './RouterApp';
+import Header from './layout/Header';
+import Footer from './layout/Footer';
+import {BrowserRouter} from 'react-router-dom';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <TodoListPanel />
+    <BrowserRouter>
+      <Header/>
+      <RouterApp />
+      <Footer/>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
